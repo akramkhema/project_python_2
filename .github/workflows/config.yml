@@ -1,0 +1,17 @@
+name: mon second workflow
+on: push
+jobs: 
+  first-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: afficher bonjour
+        run: echo "Bonjour tout le monde"
+      - name: Afficher bonsoir
+        run: echo "Bonsoir tout le monde"
+  second-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: afficher github
+        run: echo "Github action est passionant"
+      - name: Afficher terminer
+        run: echo "Github action est termine"
